@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    //4: Tasarımımızı yapalım
+
+    <EditText
+        android:id="@+id/idTxtKadi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kullanıcı Adınızı Giriniz" />
+
+    <EditText
+        android:id="@+id/idTxtIsim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Adınızı Giriniz" />
+
+    <RadioGroup
+        android:id="@+id/idRdnGrpCinsiyet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/idRdnErkek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="erkek" />
+
+        <RadioButton
+            android:id="@+id/idRdnKadin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kadın" />
+
+        <EditText
+            android:id="@+id/idTxtSifre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Şifrenizi Giriniz"
+            android:inputType="textPassword" />
+    </RadioGroup>
+
+    //54: güncellle ve ekle butonu
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/idBtnKayitOl"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Ekle" />
+
+        <Button
+            android:id="@+id/idBtnGuncelle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Güncelle" />
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/idLstView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" />
+</LinearLayout>
